@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934593560221477602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.16, y: -4.81, z: 0.29830652}
+  m_LocalPosition: {x: -3.97, y: -5.31, z: 0.29830652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8208031870495918845}
@@ -172,7 +172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154988133139226573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.58, y: -6.97, z: 0.29830652}
+  m_LocalPosition: {x: -5.91, y: -4.636364, z: 0.29830652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8208031870495918845}
@@ -316,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4956055234381401184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.23, y: -3.53, z: 0.29830652}
+  m_LocalPosition: {x: -10.24, y: -3.87, z: 0.29830652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8208031870495918845}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 6297575804212472447}
   - component: {fileID: 3856579293981282319}
   m_Layer: 0
-  m_Name: Apples
+  m_Name: Apples 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,7 +458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7902698809802092366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.713402, y: 4.636364, z: -0.29830652}
+  m_LocalPosition: {x: 6, y: 4.636364, z: -0.29830652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7483356519216421833}

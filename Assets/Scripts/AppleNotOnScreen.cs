@@ -24,12 +24,10 @@ public class AppleNotOnScreen : MonoBehaviour
             Movement ap = Apple.GetComponent<Movement>();
             if (ap.IsOffScreen)
             {
-                Debug.Log("1");
                 GroupOffScreen = true;
             }
             else
             {
-                Debug.Log("2");
                 GroupOffScreen = false;
                 break;
             }

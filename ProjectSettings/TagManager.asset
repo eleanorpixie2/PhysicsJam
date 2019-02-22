@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Apple
   - Boundary
+  - SpawnLeft
+  - SpawnRight
+  - SpawnUp
+  - SpawnDown
   layers:
   - Default
   - TransparentFX

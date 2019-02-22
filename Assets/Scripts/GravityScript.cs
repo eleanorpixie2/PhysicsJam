@@ -11,13 +11,12 @@ public class GravityScript : MonoBehaviour
 
     GameObject[] ApplesList;
 
-    // Start is called before the first frame update
     void Start()
     {
+        // Finds all apple game objects and adds them to a list
         ApplesList = GameObject.FindGameObjectsWithTag("Apple");
     }
 
-    // Update is called once per frame
     void Update()
     {
         ApplesList = GameObject.FindGameObjectsWithTag("Apple");

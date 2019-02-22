@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float Gravity = 9.8f;
+    public float Gravity = 5.8f;
     public bool VerticalDirection = true;
 
    
-    public bool IsOffScreen = false;
+    public bool IsOffScreen = true;
 
     
     
@@ -31,13 +31,40 @@ public class Movement : MonoBehaviour
         {
             rbApple.velocity = new Vector2(Gravity, 0);
         }
+
+        OffCamera();
     }
 
-    private void OnTriggerExit2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Boundary")
+        if(col.tag=="SpawnLeft")
+        {
+            VerticalDirection = false;
+            
+        }
+        else if(col.tag=="SpawnRight")
+        {
+            VerticalDirection = false;
+            Gravity = -Gravity;
+        }
+        else if (col.tag == "SpawnUp")
+        {
+            VerticalDirection = true;
+            Gravity = -Gravity;
+        }
+        else if (col.tag == "SpawnDown")
+        {
+            VerticalDirection = true;
+        }
+
+    }
+
+    void OffCamera()
+    {
+        if(transform.position.x<Camera.main.rect.xMin-10 || transform.position.x > Camera.main.rect.xMax+10 || transform.position.y < Camera.main.rect.yMin - 10 || transform.position.y > Camera.main.rect.yMax + 10)
         {
             IsOffScreen = true;
         }
     }
+
 }
