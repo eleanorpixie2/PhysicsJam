@@ -41,12 +41,12 @@ public class Timer : MonoBehaviour
     {
         StartCoroutine(StartTimer());
         //
-        if
-        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
+        
+        //this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
 
-        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
+        //this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
 
-        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
+        //this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
 
         //Replace when value is changed with assert
 
