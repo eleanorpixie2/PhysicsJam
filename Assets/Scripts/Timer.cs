@@ -4,9 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
-{    
-    //Insert: Private <Asset Folder> <name>;
-    public Text timeText;
+{
+    //private bool showImageYes = false;
+
+
+
+
+
+    //Insert: <Asset Folder> <name>;
+    //private 
+   
     private float timerValueCurrent; 
     internal IEnumerator StartTimer(float timerValueStart = 0)
     {
@@ -32,9 +39,20 @@ public class Timer : MonoBehaviour
     }
     void Update()
     {
-        //Replace when value is changed with assert
-        StartCoroutine(StartTimer()); 
+        StartCoroutine(StartTimer());
+        //
+        if
+        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
 
-        //++timerValueCurrent; //Don't need to use.
+        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
+
+        this.GetComponent<SpriteRenderer>().sprite = NeoNumber1;
+
+        //Replace when value is changed with assert
+
+
+
+
+
     }
 }
