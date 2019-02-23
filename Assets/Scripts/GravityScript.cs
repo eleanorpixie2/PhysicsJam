@@ -5,8 +5,8 @@ using UnityEngine;
 public class GravityScript : MonoBehaviour
 { 
 
-    float VerticalInput;
-    float HorizontalInput;
+    float VerticalInput = 0;
+    float HorizontalInput = 0;
     Movement GravityMovement;
 
     GameObject[] ApplesList;
