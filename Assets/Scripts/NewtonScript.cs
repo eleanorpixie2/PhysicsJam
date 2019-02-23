@@ -65,5 +65,6 @@ public class NewtonScript : MonoBehaviour
     {
         Debug.Log("Dead");
         animator.SetTrigger("isDead");
+        LevelSwitch.GameOver();
     }
 }

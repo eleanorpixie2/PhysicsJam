@@ -22,30 +22,19 @@ public class SoundManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //while(alive == false)
-        //{
-            //audioSrc.PlayOneShot(playMusic);
-            //SoundManagerScript.PlaySound("changeGravity");
             bool up = Input.GetKeyUp(KeyCode.UpArrow);
             if (up)
-                SoundManagerScript.PlaySound("changeGravity");
+                PlaySound("changeGravity");
             bool down = Input.GetKeyUp(KeyCode.DownArrow);
             if (down)
-                SoundManagerScript.PlaySound("changeGravity");
+                PlaySound("changeGravity");
             bool right = Input.GetKeyUp(KeyCode.RightArrow);
             if (right)
-                SoundManagerScript.PlaySound("changeGravity");
+                PlaySound("changeGravity");
             bool left = Input.GetKeyUp(KeyCode.LeftArrow);
             if (left)
-                SoundManagerScript.PlaySound("changeGravity");
-            //This is for testing out the death sound effect, possibly killing the player
-            bool killSwitch = Input.GetKeyUp(KeyCode.D);
-            if (killSwitch)
-            {
-                SoundManagerScript.PlaySound("playerDies");
-                alive = false;
-            }
-        //}
+                PlaySound("changeGravity");
+            
         
             
     }
