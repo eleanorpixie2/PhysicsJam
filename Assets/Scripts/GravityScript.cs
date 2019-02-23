@@ -40,6 +40,7 @@ public class GravityScript : MonoBehaviour
         // If VerticalInput is negative, means gravity is going down.
         if (VerticalInput < 0)
         {
+
             foreach (GameObject Apple in ApplesList)
             {
                 GravityMovement = Apple.GetComponent<Movement>();
@@ -53,6 +54,7 @@ public class GravityScript : MonoBehaviour
         // If Horizontal is postive, means gravity is going right.
         if (HorizontalInput > 0)
         {
+
             foreach (GameObject Apple in ApplesList)
             {
                 GravityMovement = Apple.GetComponent<Movement>();
@@ -65,6 +67,7 @@ public class GravityScript : MonoBehaviour
         // If Horizontal is negative, means gravity is going left.
         if (HorizontalInput < 0)
         {
+
             foreach (GameObject Apple in ApplesList)
             {
                 GravityMovement = Apple.GetComponent<Movement>();
@@ -74,5 +77,6 @@ public class GravityScript : MonoBehaviour
                 GravityMovement.VerticalDirection = false;
             }
         }
+
     }
 }
