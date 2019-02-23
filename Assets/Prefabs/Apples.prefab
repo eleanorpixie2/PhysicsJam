@@ -478,7 +478,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a286d4205c1570a4292a15ea9dfe58d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Apples:
-  - {fileID: 4956055234381401184}
-  - {fileID: 1154988133139226573}
-  - {fileID: 934593560221477602}

@@ -128,7 +128,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -272,7 +272,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -416,7 +416,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -500,9 +500,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a286d4205c1570a4292a15ea9dfe58d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Apples:
-  - {fileID: 4956055234381401184}
-  - {fileID: 1154988133139226573}
-  - {fileID: 934593560221477602}
-  SpawnAmount: {fileID: 1464832875521952049, guid: 3cb244cf786ea964ba3dadc8f9162fc2,
-    type: 3}
