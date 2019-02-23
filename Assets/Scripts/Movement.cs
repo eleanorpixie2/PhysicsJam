@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
    
     public bool IsOffScreen = true;
 
-    
+    public bool intialChange = false;
     
     Rigidbody2D rbApple;
 
@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour
         if (VerticalDirection)
         {
             rbApple.velocity = new Vector2(0, Gravity);
+            print(rbApple.velocity);
         }
         if (!VerticalDirection)
         {
@@ -37,31 +38,37 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag=="SpawnLeft")
+        if (!intialChange)
         {
-            VerticalDirection = false;
-            
+            if (col.tag == "SpawnLeft")
+            {
+                VerticalDirection = false;
+                intialChange = true;
+            }
+            else if (col.tag == "SpawnRight")
+            {
+                VerticalDirection = false;
+                Gravity = -Gravity;
+                intialChange = true;
+            }
+            else if (col.tag == "SpawnUp")
+            {
+                VerticalDirection = true;
+                Gravity = -Gravity;
+                intialChange = true;
+            }
+            else if (col.tag == "SpawnDown")
+            {
+                VerticalDirection = true;
+                intialChange = true;
+            }
         }
-        else if(col.tag=="SpawnRight")
-        {
-            VerticalDirection = false;
-            Gravity = -Gravity;
-        }
-        else if (col.tag == "SpawnUp")
-        {
-            VerticalDirection = true;
-            Gravity = -Gravity;
-        }
-        else if (col.tag == "SpawnDown")
-        {
-            VerticalDirection = true;
-        }
-
     }
 
     void OffCamera()
     {
-        if((transform.position.x < Camera.main.rect.xMin-10 || transform.position.x > Camera.main.rect.xMax+10) || (transform.position.y < Camera.main.rect.yMin-10 || transform.position.y > Camera.main.rect.yMax+10))
+        if((transform.position.x < Camera.main.rect.xMin-15 || transform.position.x > Camera.main.rect.xMax+15) 
+            || (transform.position.y < Camera.main.rect.yMin-10 || transform.position.y > Camera.main.rect.yMax+10))
         {
             //IsOffScreen = true;
             Destroy(this.gameObject);

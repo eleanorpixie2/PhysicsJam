@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4029468176035964932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4029468176035964934}
+  - component: {fileID: 4029468176035964933}
+  - component: {fileID: 4029468176035964928}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: SpawnDown
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4029468176035964934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029468176035964932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: -7.56, z: -0.13671875}
+  m_LocalScale: {x: 1.0283955, y: 1.0283955, z: 1.0283955}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4029468176035964933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029468176035964932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cdd70233405044e9e865a94b38750b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnRate: 3
+  MaxSpawnAmount: 3
+  TimeBetweenWaves: 3
+  ApplesLists:
+  - {fileID: 5922693075109934200, guid: 00cb808390fb6134bb825145600c32d0, type: 3}
+  - {fileID: 5145140165825407147, guid: 8c9d3fd63575b9146a7b07fe8f5f9169, type: 3}
+  - {fileID: 6940636295874597218, guid: 4564b657637d03e49893cb163420a89e, type: 3}
+  - {fileID: 1720186354730046359, guid: ae529be944add3048bc15c89d0a5bef8, type: 3}
+  - {fileID: 8792195099425955516, guid: 5c9ef3bfe72826f45a734fbed869fec7, type: 3}
+  - {fileID: 2134672134426738286, guid: 317e5c25301e7364289d077516bb3849, type: 3}
+  - {fileID: 7355370987741139374, guid: 36965e366ae56a84b8a5c437eb9cee46, type: 3}
+--- !u!61 &4029468176035964928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029468176035964932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 5}
+  m_EdgeRadius: 0
