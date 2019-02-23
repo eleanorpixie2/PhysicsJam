@@ -23,7 +23,7 @@ public class Cooldown : MonoBehaviour
         HorizontalInput = Input.GetAxis("Horizontal");
 
         // If VerticalInput is positive, means gravity is going up.
-        if(Time.Time > nextFireTime)
+        if(Time.deltaTime > nextFireTime)
 		{
 			if (VerticalInput > 0)
 			{
@@ -34,11 +34,15 @@ public class Cooldown : MonoBehaviour
 						GravityMovement.Gravity = -GravityMovement.Gravity;
 					Apple.transform.rotation = Quaternion.Euler(0, 0, 0);
 
-					nextFireTime = Time.time + cooldownTime;
-
 					GravityMovement.VerticalDirection = true;
 				}
 			}
+
+			nextFireTime = Time.deltaTime + cooldownTime;
+		}
+
+		if(Time.deltaTime > nextFireTime)
+		{
 			// If VerticalInput is negative, means gravity is going down.
 			if (VerticalInput < 0)
 			{
@@ -49,12 +53,15 @@ public class Cooldown : MonoBehaviour
 						GravityMovement.Gravity = -GravityMovement.Gravity;
 					Apple.transform.rotation = Quaternion.Euler(0, 0, 180);
 
-					nextFireTime = Time.time + cooldownTime;
-
 					GravityMovement.VerticalDirection = true;
 				}
 			}
 
+			nextFireTime = Time.deltaTime + cooldownTime;
+		}
+
+		if(Time.deltaTime > nextFireTime)
+		{
 			// If Horizontal is postive, means gravity is going right.
 			if (HorizontalInput > 0)
 			{
@@ -65,11 +72,15 @@ public class Cooldown : MonoBehaviour
 						GravityMovement.Gravity = -GravityMovement.Gravity;
 					Apple.transform.rotation = Quaternion.Euler(0, 0, -90);
 
-					nextFireTime = Time.time + cooldownTime;
-
 					GravityMovement.VerticalDirection = false;
 				}
 			}
+
+			nextFireTime = Time.deltaTime + cooldownTime;
+		}
+
+		if(Time.deltaTime > nextFireTime)
+		{
 			// If Horizontal is negative, means gravity is going left.
 			if (HorizontalInput < 0)
 			{
@@ -80,11 +91,11 @@ public class Cooldown : MonoBehaviour
 						GravityMovement.Gravity = -GravityMovement.Gravity;
 					Apple.transform.rotation = Quaternion.Euler(0, 0, 90);
 
-					nextFireTime = Time.time + cooldownTime;
-
 					GravityMovement.VerticalDirection = false;
 				}
 			}
+
+			nextFireTime = Time.deltaTime + cooldownTime;
 		}
 	}
 }
