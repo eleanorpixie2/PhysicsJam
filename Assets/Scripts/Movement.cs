@@ -61,9 +61,10 @@ public class Movement : MonoBehaviour
 
     void OffCamera()
     {
-        if(transform.position.x<Camera.main.rect.xMin-10 || transform.position.x > Camera.main.rect.xMax+10 || transform.position.y < Camera.main.rect.yMin - 10 || transform.position.y > Camera.main.rect.yMax + 10)
+        if((transform.position.x < Camera.main.rect.xMin-10 || transform.position.x > Camera.main.rect.xMax+10) || (transform.position.y < Camera.main.rect.yMin-10 || transform.position.y > Camera.main.rect.yMax+10))
         {
-            IsOffScreen = true;
+            //IsOffScreen = true;
+            Destroy(this.gameObject);
         }
     }
 

@@ -504,3 +504,5 @@ MonoBehaviour:
   - {fileID: 4956055234381401184}
   - {fileID: 1154988133139226573}
   - {fileID: 934593560221477602}
+  SpawnAmount: {fileID: 1464832875521952049, guid: 3cb244cf786ea964ba3dadc8f9162fc2,
+    type: 3}

@@ -10,6 +10,7 @@ TagManager:
   - SpawnRight
   - SpawnUp
   - SpawnDown
+  - SpawnCounter
   layers:
   - Default
   - TransparentFX

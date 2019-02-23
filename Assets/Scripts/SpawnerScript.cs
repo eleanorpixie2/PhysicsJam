@@ -7,12 +7,14 @@ public class SpawnerScript : MonoBehaviour
 {
     [SerializeField]
     float SpawnRate = 1f;
-    float CurrentSpawnrate;
+    [SerializeField]
+    Rigidbody2D rbSpawner;
     [SerializeField]
     GameObject Apples;
     [SerializeField]
-    Rigidbody2D rbSpawner;
+    int MaxSpawnAmount = 5;
 
+    float CurrentSpawnrate;
     public List<GameObject> ApplesLists;
 
     // Start is called before the first frame update
@@ -25,8 +27,6 @@ public class SpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         if (CurrentSpawnrate != SpawnRate)
         {
             CurrentSpawnrate = SpawnRate;
@@ -37,8 +37,8 @@ public class SpawnerScript : MonoBehaviour
 
     void Spawn()
     {
-        System.Random rnd = new System.Random(Guid.NewGuid().GetHashCode());
-        int i = rnd.Next(0,ApplesLists.Count);
-        Instantiate(ApplesLists[i], rbSpawner.transform);
+            System.Random rnd = new System.Random(Guid.NewGuid().GetHashCode());
+            int i = rnd.Next(0, ApplesLists.Count);
+            Instantiate(ApplesLists[i], rbSpawner.transform);
     }
 }
